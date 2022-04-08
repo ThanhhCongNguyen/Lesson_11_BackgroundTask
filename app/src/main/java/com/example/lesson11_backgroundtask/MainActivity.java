@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                             public void onResponse(Call<User> call, Response<User> response) {
                                 userArrayList.add(response.body());
                                // userListAdapter.notifyDataSetChanged();
-                                Toast.makeText(MainActivity.this, "Add user Success", Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this, "Add user successfully", Toast.LENGTH_LONG).show();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                             }
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                 ApiClient.getAPI().updateUser(id, user).enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
-                        Toast.makeText(MainActivity.this, "Update success", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Update successfully", Toast.LENGTH_LONG).show();
                         finish();
                         startActivity(getIntent());
 
@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 //Toast.makeText(MainActivity.this, response.code()+"t", Toast.LENGTH_LONG).show();
-                Toast.makeText(MainActivity.this, "Delete success", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Delete successfully", Toast.LENGTH_LONG).show();
                 finish();
                 startActivity(getIntent());
 

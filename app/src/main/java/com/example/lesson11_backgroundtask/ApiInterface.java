@@ -13,7 +13,7 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface ApiInterface {
-    String token = "e6c4cfb6ed8d550d9f79af16c20ad499a9dcd0fd4f8659452440bd5fef926dcf";
+    String token = "04251f02430425e78fa81b2faee85e4a7fd00fb3e08815b72b351c8fe69de786";
     @GET("users?access-token=" + token)
     Call<ArrayList<User>> getAllUsers();
 
